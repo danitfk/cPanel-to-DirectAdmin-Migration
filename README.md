@@ -18,5 +18,18 @@ This is a painless perl script to migrate accounts from cPanel to DirectAdmin. O
 
 * Restore the DA user backups in DA's reseller-level Manage User Backups tool.
 
+### How to Get Backup in cPanel?
+
+You can get a backup from user(s) with GUI or `pkgacct` command.
+Command line way:
+```
+BACKUP_DIR=/root/username
+mkdir -p $BACKUP_DIR
+/scripts/pkgacct USERNAME $BACKUP_DIR
+cd $BACKUP_DIR
+ls -ls
+
+```
+
 
 [[ Original Link: http://forum.directadmin.com/showthread.php?t=2247 ]]
